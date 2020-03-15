@@ -16,7 +16,8 @@
 		2E43DF9E241B194C0013BF1D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43DF9D241B194C0013BF1D /* WeatherTests.swift */; };
 		2E43DFA9241B194C0013BF1D /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43DFA8241B194C0013BF1D /* WeatherUITests.swift */; };
 		2E43DFB9241B23F70013BF1D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43DFB8241B23F70013BF1D /* TableViewCell.swift */; };
-		2EDF3A54241C4953002370C5 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF3A53241C4953002370C5 /* weather.swift */; };
+		2EDF3A58241D65DB002370C5 /* ResponseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF3A57241D65DB002370C5 /* ResponseAPI.swift */; };
+		2EDF3A5A241D684C002370C5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF3A59241D684C002370C5 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		2E43DFA8241B194C0013BF1D /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		2E43DFAA241B194C0013BF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E43DFB8241B23F70013BF1D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		2EDF3A53241C4953002370C5 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
+		2EDF3A57241D65DB002370C5 /* ResponseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseAPI.swift; sourceTree = "<group>"; };
+		2EDF3A59241D684C002370C5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +105,10 @@
 		2E43DF84241B194A0013BF1D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				2E6917B5241DF7EA001D0BE9 /* Models */,
+				2E6917B4241DF7D4001D0BE9 /* Controller */,
+				2E6917B3241DF6EE001D0BE9 /* Network */,
 				2E43DF85241B194A0013BF1D /* AppDelegate.swift */,
-				2EDF3A53241C4953002370C5 /* weather.swift */,
-				2E43DF87241B194A0013BF1D /* ViewController.swift */,
-				2E43DFB8241B23F70013BF1D /* TableViewCell.swift */,
 				2E43DF89241B194A0013BF1D /* Main.storyboard */,
 				2E43DF8F241B194C0013BF1D /* Assets.xcassets */,
 				2E43DF91241B194C0013BF1D /* LaunchScreen.storyboard */,
@@ -132,6 +134,31 @@
 				2E43DFAA241B194C0013BF1D /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		2E6917B3241DF6EE001D0BE9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF3A59241D684C002370C5 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E6917B4241DF7D4001D0BE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E43DF87241B194A0013BF1D /* ViewController.swift */,
+				2E43DFB8241B23F70013BF1D /* TableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E6917B5241DF7EA001D0BE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF3A57241D65DB002370C5 /* ResponseAPI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDF3A54241C4953002370C5 /* weather.swift in Sources */,
 				2E43DFB9241B23F70013BF1D /* TableViewCell.swift in Sources */,
 				2E43DF8E241B194A0013BF1D /* Weather.xcdatamodeld in Sources */,
+				2EDF3A5A241D684C002370C5 /* NetworkManager.swift in Sources */,
+				2EDF3A58241D65DB002370C5 /* ResponseAPI.swift in Sources */,
 				2E43DF88241B194A0013BF1D /* ViewController.swift in Sources */,
 				2E43DF86241B194A0013BF1D /* AppDelegate.swift in Sources */,
 			);
